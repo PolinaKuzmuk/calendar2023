@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Calendar</title>
+</head>
+
+<body class="body">
+    <h1 class="title">Calendar</h1>
+    <div class="calendar-body">
+        <div class="month-wrap">
+            <button class="btn btn-prev" type="button">Previous</button>
+            <p class="month"></p>
+            <p class="year"></p>
+            <button class="btn btn-next" type="button">Next</button>
+        </div>
+        <div class="days-of-week">
+            <div>Mon</div>
+            <div>Tue</div>
+            <div>Wed</div>
+            <div>Thu</div>
+            <div>Fri</div>
+            <div>Sat</div>
+            <div>Sun</div>
+        </div>
+        <div class="days"></div>
+    </div>
+    <div class="event-preview">
+        <button type="button" class="btn btn-close"></button>
+        <div class="view-event" id="view-event"></div>
+        <button type="button" class="btn btn-add-event">Add event</button>
+    </div>
+    <div class="add-event">
+        <button type="button" class="btn btn-close"></button>
+        <form>
+            <fieldset>
+                <legend>New event</legend>
+                <p class="event-date" id="event-date"></p>
+                <label>Time*: <input type="time" required></label><br>
+                <label>Season: <input type="text" id="season" name="season" placeholder="2024"></label><br>
+                <label>Stadium: <input type="text" id="stadium" name="stadium"
+                        placeholder="Enter a stadium"></label><br>
+                <label>Home team: <input type="text" id="home-team" name="home-team"
+                        placeholder="Enter a home team"></label><br>
+                <label>Away team: <input type="text" id="away-team" name="away-team"
+                        placeholder="Enter an away team"></label><br>
+                <input class="btn" type="submit" value="Add event">
+                <input class="btn" type="reset" value="Reset">
+            </fieldset>
+        </form>
+    </div>
+    <div id="overlay"></div>
+    <script src="index.js" type="module"></script>
+</body>
+
+</html>
