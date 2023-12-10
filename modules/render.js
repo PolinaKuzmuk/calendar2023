@@ -36,7 +36,7 @@ function highlightToday(i, day, month, year) {
 }
 
 function highlightEventDay(day) {
-    eventsList.filter(item => {
+    eventsList.forEach(item => {
         const dateOfEvent = item.dateVenue.split('-');
         if (+dateOfEvent[0] === +year.innerHTML && +dateOfEvent[1] - 1 === +monthArr.indexOf(month.innerHTML) && +dateOfEvent[2] === +day.innerHTML) {
             day.classList.add('is-event');

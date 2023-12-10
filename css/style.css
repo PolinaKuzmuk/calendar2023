@@ -48,6 +48,8 @@
 
 .btn-close {
     display: block;
+    position: sticky;
+    top: 0;
     margin-left: auto;
     width: 16px;
     height: 15px;
@@ -55,6 +57,7 @@
     background-size: contain;
     background-image: url('../img/close.svg');
     background-color: #F0ECE5;
+    background-color: transparent;
     border: none;
     padding: 0;
 }

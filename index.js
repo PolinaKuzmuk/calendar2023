@@ -33,8 +33,8 @@ daysList.addEventListener('click', function (e) {
         closeBtnEventListener(closeBtn, eventPreview, overlay);
         eventsList.filter(event => {
             const eventDate = new Date(`${event.dateVenue}T00:00:00`);
-            const eventWindow = document.getElementById('view-event');
             if (eventDate.toDateString() == thisDate.toDateString()) {
+                const eventWindow = document.getElementById('view-event');
                 const eventWrap = document.createElement('div');
                 eventWrap.classList.add('event-wrap');
                 eventWindow.appendChild(eventWrap);
