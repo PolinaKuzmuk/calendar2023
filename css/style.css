@@ -40,12 +40,6 @@
     color: #F0ECE5;
 }
 
-.btn-prev,
-.btn-next {
-    margin: 0;
-    width: 100%;
-}
-
 .btn-close {
     display: block;
     position: sticky;
@@ -60,6 +54,12 @@
     background-color: transparent;
     border: none;
     padding: 0;
+}
+
+.btn-prev,
+.btn-next {
+    margin: 0;
+    width: 100%;
 }
 
 .month {
